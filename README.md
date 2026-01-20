@@ -132,7 +132,7 @@ personalized-learning-assistant-rag/
 
 For detailed technical documentation on the RAG implementation, see:
 - [RAG_IMPLEMENTATION.md](RAG_IMPLEMENTATION.md) - Architecture and design
-- [Original Project Report](https://github.com/gowrish28gog/Assisted_learning_app/capstone_final_report.pdf) - Original capstone documentation
+- [Original Project Report](https://github.com/gowrish28gog/Assisted_learning_app/blob/main/capstone_final_report.pdf) - Original capstone documentation
 
 ## 🤝 Acknowledgments
 
