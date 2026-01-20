@@ -132,7 +132,7 @@ personalized-learning-assistant-rag/
 
 For detailed technical documentation on the RAG implementation, see:
 - [RAG_IMPLEMENTATION.md](RAG_IMPLEMENTATION.md) - Architecture and design
-- [Original Project Report](capstone_final_report.pdf) - Original capstone documentation
+- [Original Project Report](https://github.com/gowrish28gog/Assisted_learning_app/capstone_final_report.pdf) - Original capstone documentation
 
 ## 🤝 Acknowledgments
 
@@ -150,7 +150,7 @@ This project maintains the same license as the original project.
 **Your Name**  
 - GitHub: [@Priyanka-Gujar](https://github.com/Priyanka-Gujar/)
 - LinkedIn: [priyankagujarprofile](https://linkedin.com/in/priyankagujarprofile)
-- Email: your.email@example.com
+- Email: gujar.p@northeastern.edu
 
 ---
 
