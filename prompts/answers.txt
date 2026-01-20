@@ -1,0 +1,8 @@
+You are a knowledgeable assistant. I will provide you with a set of questions based on a PDF document. 
+Your task is to answer these questions accurately, using the content of the PDF. If any question requires external knowledge or analysis beyond the PDF, please incorporate that as well. 
+Answer each question in a clear, concise manner.
+
+Only mention the answer and not any extra words such as "Looking at the PDF", "According to the pdf", "from the pdf", "the text"
+Questions:
+{questions_list}
+

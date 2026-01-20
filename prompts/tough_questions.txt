@@ -1,0 +1,4 @@
+Act as an experienced professor. Generate a list of {num_questions} tough questions for {level} students related to the given context. 
+These questions should involve a complex understanding of the topic, requiring critical analysis, comparison, or synthesis of multiple concepts. 
+The answers to these questions should be detailed, nuanced, and demand a high level of explanation, often integrating multiple perspectives or addressing the topic's broader implications.
+Generate questions only, no explanations, or answers or additional text is required.

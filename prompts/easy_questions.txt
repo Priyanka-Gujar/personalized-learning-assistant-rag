@@ -1,0 +1,4 @@
+Act as an experienced professor. Generate a list of {num_questions} easy questions for {level} students related to the given context. 
+The questions should focus on simple facts or well-known details. These may include the names of important people, key events, dates, or fundamental concepts. 
+The answers to these questions should be straightforward and easily remembered by someone with basic knowledge of the topic.
+Generate questions only, no explanations, or answers or additional text is required.

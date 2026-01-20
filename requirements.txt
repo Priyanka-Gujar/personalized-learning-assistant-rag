@@ -1,0 +1,49 @@
+# Hugging Face libraries
+transformers
+datasets
+tokenizers
+
+# Ollama (if using locally)
+ollama
+
+# ChromaDB for vector storage
+# chromadb
+
+# NLP and PDF processing
+nltk
+pypdf
+
+# Streamlit for UI
+streamlit
+
+# OpenAI API
+openai
+
+# Elevenlabs for text to speech
+dotenv
+elevenlabs
+
+# Exa for web search
+exa_py
+
+# ConvertAPI to convert files to PDF and extract text
+python-docx
+python-pptx
+convertapi
+
+# Pydantic for response models
+pydantic
+
+# Evaluation
+evaluate
+rouge_score
+
+# Additional dependencies that might be useful
+tqdm
+numpy
+pandas
+scipy
+
+# RAG Components
+chromadb>=0.4.22
+sentence-transformers>=2.2.2

@@ -1,0 +1,87 @@
+from rouge_score import rouge_scorer
+
+
+# Define the reference text
+
+reference_text = """
+Linear regression is one of the most fundamental and widely used techniques in statistical
+modeling and machine learning. It is used to model the relationship between a dependent
+variable (also known as the target or response variable) and one or more independent
+variables (also known as features or predictors). The goal of linear regression is to find the
+best-fitting line that describes this relationship in a way that minimizes the error between
+the predicted and actual values.
+In simple linear regression, there is only one independent variable, and the relationship
+between the dependent and independent variables is assumed to be linear. The model
+expresses the dependent variable as a weighted sum of the independent variable(s), plus
+an error term. The intercept represents the value of the dependent variable when the
+independent variable is zero, and the slope indicates how much the dependent variable
+changes for a one-unit increase in the independent variable.
+For multiple linear regression, the model extends to multiple independent variables. In this
+case, the dependent variable is modeled as a weighted sum of several features, plus an
+error term. Each feature has its own coeFicient, which indicates how much that feature
+influences the dependent variable.
+Linear regression assumes a few important conditions, including:
+1. Linearity: The relationship between the independent and dependent variables must
+be linear.
+2. Independence: Observations must be independent of one another.
+3. Homoscedasticity: The variance of the error terms should be constant across all
+levels of the independent variable(s).
+4. Normality of errors: The residuals (errors) should be normally distributed.
+The performance of a linear regression model can be assessed using various metrics, such
+as R-squared (which measures how well the independent variables explain the variance in
+the dependent variable), Mean Squared Error (MSE), and Mean Absolute Error (MAE).
+While linear regression is a powerful tool, it has limitations. It may perform poorly if the
+relationship between the variables is not truly linear, if there is multicollinearity among the
+predictors, or if the assumptions of linear regression are violated. In such cases, other
+regression techniques (such as polynomial regression, ridge regression, or LASSO) may be
+more appropriate.
+"""
+
+
+# Summary from T5 model
+
+summary_t5 = """
+Linear regression is a powerful tool, but it has limitations.
+"""
+
+
+# Summary from Gemma 2 model
+
+summary_gemma2 = """
+Linear regression is a statistical technique used to model the relationship between variables. Its goal is to find the best-fitting line (in simple linear regression) or weighted sum of features (in multiple linear regression) that minimizes the difference between predicted and actual values.
+
+Here are key concepts:
+
+Dependent variable: This is the variable we're trying to predict. It can be influenced by independent variables.
+Independent variable(s): These are factors or characteristics influencing the dependent variable.
+Linearity: The relationship between independent and dependent variables must be linear for simple regression, and in more complex models with multiple features, this relationship is captured through weighted sums.
+Coefficients: Each feature's influence on the dependent variable is quantified by a coefficient, reflecting its impact strength.
+The model aims to find a relationship that best describes how these variables interact. To assess the model's performance, we use metrics like R-squared (how well independent variables explain variance in the dependent variable) and Mean Squared Error or MAE (measuring average error).
+
+Important points:
+
+Linear regression works under certain assumptions: linear relationship between variables, independence of observations, constant error variance across all levels of the independent variable(s), and normality of errors.
+Failure to meet these assumptions can lead to model misrepresentation and incorrect conclusions. In such cases, other techniques like polynomial regression or regularization methods may be more suitable.
+In conclusion: Linear regression is a powerful tool for modeling relationships between variables but needs to be used carefully and with awareness of its limitations. Understanding key concepts, assumptions, metrics, and potential alternative approaches will help in utilizing this technique effectively.
+"""
+
+
+# Create a ROUGE scorer object
+scorer = rouge_scorer.RougeScorer(['rouge1', 'rouge2', 'rougeL'], use_stemmer=True)
+
+# Calculate ROUGE scores for summary1
+scores_summary1 = scorer.score(reference_text, summary_t5)
+
+# Calculate ROUGE scores for summary2
+scores_summary2 = scorer.score(reference_text, summary_gemma2)
+
+# Print the ROUGE scores for both summaries
+print("ROUGE scores for summary generated by T5:")
+print(f"ROUGE-1: {scores_summary1['rouge1']}")
+print(f"ROUGE-2: {scores_summary1['rouge2']}")
+print(f"ROUGE-L: {scores_summary1['rougeL']}")
+
+print("\nROUGE scores for summary generated by Gemma2:")
+print(f"ROUGE-1: {scores_summary2['rouge1']}")
+print(f"ROUGE-2: {scores_summary2['rouge2']}")
+print(f"ROUGE-L: {scores_summary2['rougeL']}")

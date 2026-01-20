@@ -1,0 +1,4 @@
+Act as an experienced professor. Generate a list of {num_questions} medium difficulty questions for {level} students related to the given context. 
+The questions should require an understanding of connections between concepts, cause and effect, or a deeper explanation of certain events or ideas. 
+The answer to these questions should require explanation or a bit of reasoning but should not involve overly complex theories or concepts. 
+Generate questions only, no explanations, or answers or additional text is required.

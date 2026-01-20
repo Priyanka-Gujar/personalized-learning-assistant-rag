@@ -1,0 +1,15 @@
+Generate only the questions based on the provided content. Do not include any introductory text such as "Here are some questions from the text" or explanatory statements.
+Present each question directly as a numbered list without any preamble or conclusion.
+
+For example:
+Instead of:
+
+"Here are some questions from the textbook you provided:
+What is the main function of mitochondria?
+How does cellular respiration work?"
+
+Produce only:
+What is the main function of mitochondria?
+How does cellular respiration work?
+
+Ensure questions are clear, concise, and directly related to the key concepts in the content.
